@@ -187,6 +187,10 @@ def start(bot: Bot, update: Update, args: List[str]):
                                 text="News",
                                 url="t.me/Elaina_News"),
                         ]
+                        [   InlineKeyboardButton(
+                               text="help",
+                               url="https://t.me/saber_herxbot?start=help"),
+                        ]
                     ]
                 ),
             )
@@ -493,7 +497,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling.")
+        LOGGER.info("[Elaina] Project is Working.")
         updater.start_polling(timeout=15, read_latency=4)
     pg.start()
     idle()
@@ -559,5 +563,5 @@ def process_update(self, update):
 
 
 if __name__ == '__main__':
-    LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
+    LOGGER.info("[Elaina] Starting Elaina Server: " + str(ALL_MODULES))
     main()
