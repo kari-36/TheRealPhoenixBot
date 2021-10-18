@@ -156,7 +156,6 @@ def start(bot: Bot, update: Update, args: List[str]):
                         [    InlineKeyboardButton(
                                 text="Support",
                                 url="t.me/Elaina_Support_chat"),
-                          )
                         ]    
                     ]
                 ),
