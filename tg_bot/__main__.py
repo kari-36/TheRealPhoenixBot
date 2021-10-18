@@ -187,9 +187,9 @@ def start(bot: Bot, update: Update, args: List[str]):
                                 text="News",
                                 url="t.me/Elaina_News"),
                         ]
-                        [   InlineKeyboardButton(
-                               text="help",
-                               url="https://t.me/saber_herxbot?start=help"),
+                        [    InlineKeyboardButton(
+                                text="help",
+                                url="https://t.me/saber_herxbot?start=help"),
                         ]
                     ]
                 ),
