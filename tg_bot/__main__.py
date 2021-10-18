@@ -141,7 +141,7 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_animation(
+            update.effective_message.reply_photo(
                 BOT_IMAGE,
                 caption=PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN,
@@ -156,7 +156,11 @@ def start(bot: Bot, update: Update, args: List[str]):
                         [    InlineKeyboardButton(
                                 text="Support",
                                 url="t.me/Elaina_Support_chat"),
-                        ]    
+                             
+                             InlineKeyboardButton(
+                                text="News",
+                                url="t.me/Elaina_News"),
+                        ]
                     ]
                 ),
             )
