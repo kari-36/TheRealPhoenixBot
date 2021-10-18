@@ -37,7 +37,7 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username",
-         "value": "TheRealPhoenix"
+         "value": "Slient_Boy"
       },
       "PORT": {
          "description": "Port to use for your webhooks.",
@@ -85,8 +85,8 @@
       "best",
       "group",
       "manager",
-      "phoenix"
+      "Elaina"
    ],
-   "name": "Phoenix",
-   "repository": "https://github.com/rsktg/TheRealPhoenixBot"
+   "name": "Elaina",
+   "repository": "https://github.com/kari-36/TheRealPhoenixBot"
 }
