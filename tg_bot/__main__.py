@@ -151,6 +151,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                             InlineKeyboardButton(
                                 text="Add Elaina to your group.",
                                 url="t.me/{}?startgroup=botstart".format(bot.username),
+                          ),
                         ],
                         [    InlineKeyboardButton(
                                 text="Support",
