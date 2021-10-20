@@ -32,9 +32,9 @@ from telegram import Message, Chat, Update, Bot
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-from tg_bot import dispatcher, LOGGER
-from tg_bot.__main__ import DATA_IMPORT
-from tg_bot.modules.helper_funcs.chat_status import user_admin
+from Elaina import dispatcher, LOGGER
+from Elaina.__main__ import DATA_IMPORT
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.chat_status import user_admin
 
 
 @run_async
