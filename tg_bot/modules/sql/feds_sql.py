@@ -29,7 +29,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, func, distinct, Integer, Boolean
 
-from tg_bot.modules.sql import SESSION, BASE
+from Elaina.modules.database_ptb_funcs.sql import SESSION, BASE
 
 
 class Federations(BASE):
