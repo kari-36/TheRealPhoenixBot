@@ -28,7 +28,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 import os
 import asyncio
-from tg_bot import pg as bot
+from Elaina import pg as bot
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.raw.functions.messages import UpdatePinnedMessage
 
