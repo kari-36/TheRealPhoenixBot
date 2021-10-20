@@ -27,7 +27,7 @@ import threading
 
 from sqlalchemy import String, Column, Integer, UnicodeText
 
-from tg_bot.modules.sql import SESSION, BASE
+from Elaina.modules.database_ptb_funcs.sql import SESSION, BASE
 DEF_COUNT = 0
 DEF_LIMIT = 0
 DEF_OBJ = (None, DEF_COUNT, DEF_LIMIT)
