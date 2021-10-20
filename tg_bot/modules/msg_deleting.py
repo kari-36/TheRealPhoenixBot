@@ -33,9 +33,9 @@ from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 
-from tg_bot import dispatcher, LOGGER
-from tg_bot.modules.helper_funcs.chat_status import user_admin, can_delete
-from tg_bot.modules.log_channel import loggable
+from Elaina import dispatcher, LOGGER
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.chat_status import user_admin, can_delete
+from Elaina.modules.log_channel import loggable
 
 
 @run_async
