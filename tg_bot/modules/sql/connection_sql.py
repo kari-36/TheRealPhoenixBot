@@ -30,7 +30,7 @@ from typing import Union
 
 from sqlalchemy import Column, String, Boolean, UnicodeText, Integer
 
-from tg_bot.modules.sql import SESSION, BASE
+from Elaina.modules.database_ptb_funcs.sql import SESSION, BASE
 
 
 class ChatAccessConnectionSettings(BASE):
