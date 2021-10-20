@@ -28,7 +28,7 @@ import threading
 
 from sqlalchemy import func, distinct, Column, String, UnicodeText
 
-from tg_bot.modules.sql import SESSION, BASE
+from Elaina.modules.database_ptb_funcs.sql import SESSION, BASE
 
 
 class BlackListFilters(BASE):
