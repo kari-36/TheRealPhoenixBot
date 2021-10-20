@@ -1,8 +1,8 @@
 import re
 import telegram.ext as tg
 from telegram import Update
-import tg_bot.modules.sql.blacklistusers_sql as sql
-from tg_bot import DEV_USERS, SUDO_USERS
+import Elaina.modules.database_ptb_funcs.sql.blacklistusers_sql as sql
+from Elaina import DEV_USERS, SUDO_USERS
 from pyrate_limiter import (BucketFullException, Duration, RequestRate, Limiter,
                             MemoryListBucket)
 
