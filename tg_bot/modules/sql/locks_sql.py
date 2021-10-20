@@ -28,7 +28,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from tg_bot.modules.sql import SESSION, BASE
+from Elaina.modules.database_ptb_funcs.sql import SESSION, BASE
 
 
 class Permissions(BASE):
