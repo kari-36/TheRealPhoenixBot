@@ -40,14 +40,14 @@ from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
 from telegram.error import BadRequest, Unauthorized, TelegramError
 
-from tg_bot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS, BAN_STICKER
-from tg_bot.modules.sql.blacklistusers_sql import BLACKLIST_USERS
-from tg_bot.__main__ import GDPR
-from tg_bot.__main__ import STATS, USER_INFO
-from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot.modules.helper_funcs.chat_status import user_admin
-from tg_bot.modules.helper_funcs.extraction import extract_user
-from tg_bot.modules.helper_funcs.filters import CustomFilters
+from Elaina import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS, BAN_STICKER
+from Elaina.modules.database_ptb_funcs.sql.blacklistusers_sql import BLACKLIST_USERS
+from Elaina.__main__ import GDPR
+from Elaina.__main__ import STATS, USER_INFO
+from Elaina.modules.disable import DisableAbleCommandHandler
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.chat_status import user_admin
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.extraction import extract_user
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.filters import CustomFilters
 
 RUN_STRINGS = (
     "Where do you think you're going?",
