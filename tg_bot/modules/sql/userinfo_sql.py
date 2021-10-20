@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, Integer, UnicodeText
 
-from tg_bot.modules.sql import SESSION, BASE
+from Elaina.modules.database_ptb_funcs.sql import SESSION, BASE
 
 
 class UserInfo(BASE):
