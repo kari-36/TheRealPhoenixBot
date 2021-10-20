@@ -28,7 +28,7 @@ import threading
 
 from sqlalchemy import Column, UnicodeText, Integer, String, Boolean
 
-from tg_bot.modules.sql import BASE, SESSION
+from Elaina.modules.database_ptb_funcs.sql import BASE, SESSION
 
 
 class GloballyBannedUsers(BASE):
