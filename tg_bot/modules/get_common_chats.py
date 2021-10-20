@@ -7,9 +7,9 @@ from telegram.error import BadRequest, Unauthorized, RetryAfter
 from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 
-from tg_bot import dispatcher, OWNER_ID
-from tg_bot.modules.sql.users_sql import get_user_com_chats
-from tg_bot.modules.helper_funcs.extraction import extract_user
+from Elaina import dispatcher, OWNER_ID
+from Ealina.modules.sql.users_sql import get_user_com_chats
+from Elaina.modules.helper_funcs.extraction import extract_user
 
 
 @run_async
