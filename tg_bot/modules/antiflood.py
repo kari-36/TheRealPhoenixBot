@@ -30,22 +30,22 @@ from typing import Optional, List
 
 from telegram import Message, Chat, Update, Bot, User, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode
 
-from tg_bot import SUDO_USERS, WHITELIST_USERS, dispatcher
-from tg_bot.modules.helper_funcs.chat_status import (
+from Elaina import SUDO_USERS, WHITELIST_USERS, dispatcher
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.chat_status import (
     bot_admin, can_restrict, connection_status, is_user_admin, user_admin,
     user_admin_no_reply)
-from tg_bot.modules.log_channel import loggable
-from tg_bot.modules.sql import antiflood_sql as sql
+from Elaina.modules.log_channel import loggable
+from Elaina.modules.database_ptb_funcs.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryHandler, run_async
 from telegram.utils.helpers import mention_html, escape_markdown
-from tg_bot import dispatcher
-from tg_bot.modules.helper_funcs.chat_status import is_user_admin, user_admin, can_restrict
-from tg_bot.modules.helper_funcs.string_handling import extract_time
-from tg_bot.modules.log_channel import loggable
-from tg_bot.modules.sql import antiflood_sql as sql
-from tg_bot.modules.connection import connected
-from tg_bot.modules.helper_funcs.alternate import send_message
+from Elaina import dispatcher
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.chat_status import is_user_admin, user_admin, can_restrict
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.string_handling import extract_time
+from Elaina.modules.log_channel import loggable
+from Elaina.modules.database_ptb_funcs.sql import antiflood_sql as sql
+from Elaina.modules.connection import connected
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.alternate import send_message
 FLOOD_GROUP = 3
 
 @connection_status
