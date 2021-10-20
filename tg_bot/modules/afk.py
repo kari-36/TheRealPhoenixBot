@@ -30,10 +30,10 @@ from telegram import Message, Update, Bot, User
 from telegram import MessageEntity
 from telegram.ext import Filters, MessageHandler, run_async
 
-from tg_bot import dispatcher
-from tg_bot.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
-from tg_bot.modules.sql import afk_sql as sql
-from tg_bot.modules.users import get_user_id
+from Elaina import dispatcher
+from Elaina.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
+from Elaina.modules.database_ptb_funcs.sql import afk_sql as sql
+from Elaina.modules.users import get_user_id
 
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
