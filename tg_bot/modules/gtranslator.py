@@ -28,7 +28,7 @@ from gpytranslate import Translator
 from pyrogram import filters
 from pyrogram.types import Message
 
-from tg_bot import pg
+from Elaina import pg
 
 
 trans = Translator()
