@@ -30,8 +30,8 @@ from malclient.exceptions import APIException
 
 from telegram import Bot, Update, Message, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import run_async
-from tg_bot import OWNER_ID, MAL_CLIENT_ID, MAL_ACCESS_TOKEN, MAL_REFRESH_TOKEN, dispatcher
-from tg_bot.modules.disable import DisableAbleCommandHandler
+from Elaina import OWNER_ID, MAL_CLIENT_ID, MAL_ACCESS_TOKEN, MAL_REFRESH_TOKEN, dispatcher
+from Elaina.modules.disable import DisableAbleCommandHandler
 
 
 client = Client()
