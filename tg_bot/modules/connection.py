@@ -32,10 +32,10 @@ from telegram import Bot, Update, ParseMode, InlineKeyboardMarkup, InlineKeyboar
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler, run_async
 
-import tg_bot.modules.sql.connection_sql as sql
-from tg_bot import dispatcher, SUDO_USERS, DEV_USERS
-from tg_bot.modules.helper_funcs import chat_status
-from tg_bot.modules.helper_funcs.alternate import send_message
+import Elaina.modules.database_ptb_funcs.sql.connection_sql as sql
+from Elaina import dispatcher, SUDO_USERS, DEV_USERS
+from Elaina.modules.database_ptb_funcs.python_telegram_bot import chat_status
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.alternate import send_message
 
 user_admin = chat_status.user_admin
 
