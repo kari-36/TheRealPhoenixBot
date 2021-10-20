@@ -24,11 +24,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from tg_bot import dispatcher, LOGGER
+from Elaina import dispatcher, LOGGER
 from telegram import Bot, Update
 from telegram.ext.dispatcher import run_async
-from tg_bot.modules.helper_funcs.chat_status import dev_user
-from tg_bot.modules.helper_funcs.misc import sendMessage
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.chat_status import dev_user
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.misc import sendMessage
 from telegram.ext import CommandHandler
 from subprocess import Popen, PIPE
 
