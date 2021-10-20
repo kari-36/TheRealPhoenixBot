@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from tg_bot import LOAD, NO_LOAD, LOGGER
+from Elaina import LOAD, NO_LOAD, LOGGER
 
 
 def __list_all_modules():
