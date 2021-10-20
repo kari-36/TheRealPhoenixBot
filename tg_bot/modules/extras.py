@@ -36,8 +36,8 @@ from wikipedia.exceptions import DisambiguationError, PageError
 from telegram import Message, Chat, Update, Bot, ParseMode
 from telegram.ext import run_async
 
-from tg_bot import dispatcher
-from tg_bot.modules.disable import DisableAbleCommandHandler
+from Elaina import dispatcher
+from Elaina.modules.disable import DisableAbleCommandHandler
 
 SHRUGS = (
     "┐(´д｀)┌",
