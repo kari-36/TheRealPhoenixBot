@@ -31,8 +31,8 @@ import telegram
 from telegram import Update, Bot, ParseMode
 from telegram.ext import run_async
 
-from tg_bot import dispatcher, LOGGER
-from tg_bot.modules.disable import DisableAbleRegexHandler
+from Elaina import dispatcher, LOGGER
+from Elaina.modules.disable import DisableAbleRegexHandler
 
 DELIMITERS = ("/", ":", "|", "_")
 
