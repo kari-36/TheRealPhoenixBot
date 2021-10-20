@@ -28,7 +28,7 @@ import threading
 
 from sqlalchemy import Column, String
 
-from tg_bot.modules.sql import BASE, SESSION
+from Elaina.modules.database_ptb_funcs.sql import BASE, SESSION
 
 
 class ChatbotChats(BASE):
