@@ -3,7 +3,7 @@ from typing import Optional
 
 from telegram import User, Chat, ChatMember, Update, Bot
 
-from tg_bot import dispatcher, DEL_CMDS, SUDO_USERS, WHITELIST_USERS, DEV_USERS, OWNER_ID
+from Elaina import dispatcher, DEL_CMDS, SUDO_USERS, WHITELIST_USERS, DEV_USERS, OWNER_ID
 
 
 def can_delete(chat: Chat, bot_id: int) -> bool:
@@ -242,6 +242,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from tg_bot.modules import connection
+from Elaina.modules import connection
 
 connected = connection.connected
