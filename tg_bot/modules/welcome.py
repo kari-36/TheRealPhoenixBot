@@ -36,14 +36,14 @@ from telegram.error import BadRequest
 from telegram.ext import MessageHandler, Filters, CommandHandler, run_async, CallbackQueryHandler, JobQueue
 from telegram.utils.helpers import mention_html
 
-import tg_bot.modules.sql.welcome_sql as sql
-from tg_bot import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS
-from tg_bot.modules.helper_funcs.chat_status import user_admin, can_delete, is_user_ban_protected
-from tg_bot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from tg_bot.modules.helper_funcs.msg_types import get_welcome_type
-from tg_bot.modules.helper_funcs.string_handling import markdown_parser, \
+import Elaina.modules.database_ptb_funcs.sql.welcome_sql as sql
+from Elaina import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.chat_status import user_admin, can_delete, is_user_ban_protected
+from Elaima.modules.database_ptb_funcs.python_telegram_bot.misc import build_keyboard, revert_buttons
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.msg_types import get_welcome_type
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.string_handling import markdown_parser, \
     escape_invalid_curly_brackets, markdown_to_html
-from tg_bot.modules.log_channel import loggable
+from Elaina.modules.log_channel import loggable
 
 VALID_WELCOME_FORMATTERS = ['first', 'last', 'fullname', 'username', 'id', 'count', 'chatname', 'mention']
 
