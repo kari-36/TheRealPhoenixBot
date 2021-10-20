@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, UnicodeText, Integer
 
-from tg_bot.modules.sql import BASE, SESSION
+from Elaina.modules.database_ptb_funcs.sql import BASE, SESSION
 
 
 class RSS(BASE):
