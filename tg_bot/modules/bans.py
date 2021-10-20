@@ -32,13 +32,13 @@ from telegram.error import BadRequest
 from telegram.ext import run_async, CommandHandler, Filters
 from telegram.utils.helpers import mention_html
 
-from tg_bot import dispatcher, BAN_STICKER, LOGGER, OWNER_ID
-from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot.modules.helper_funcs.chat_status import bot_admin, user_admin, is_user_ban_protected, can_restrict, \
+from Elaina import dispatcher, BAN_STICKER, LOGGER, OWNER_ID
+from Elaina.modules.disable import DisableAbleCommandHandler
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.chat_status import bot_admin, user_admin, is_user_ban_protected, can_restrict, \
     is_user_admin, is_user_in_chat, can_delete, user_can_ban
-from tg_bot.modules.helper_funcs.extraction import extract_user_and_text
-from tg_bot.modules.helper_funcs.string_handling import extract_time
-from tg_bot.modules.log_channel import loggable
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.extraction import extract_user_and_text
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.string_handling import extract_time
+from Elaina.modules.log_channel import loggable
 
 
 @run_async
