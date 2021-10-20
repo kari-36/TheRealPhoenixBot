@@ -34,13 +34,13 @@ from telegram.error import BadRequest, TelegramError
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import tg_bot.modules.sql.global_bans_sql as sql
-from tg_bot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, STRICT_GBAN, WHITELIST_USERS
-from tg_bot.modules.helper_funcs.chat_status import user_admin, is_user_admin
-from tg_bot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from tg_bot.modules.helper_funcs.filters import CustomFilters
-from tg_bot.modules.helper_funcs.misc import send_to_list
-from tg_bot.modules.sql.users_sql import get_user_com_chats
+import Elaina.modules.database_ptb_funcs.sql.global_bans_sql as sql
+from Elaina import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, STRICT_GBAN, WHITELIST_USERS
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.chat_status import user_admin, is_user_admin
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.extraction import extract_user, extract_user_and_text
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.filters import CustomFilters
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.misc import send_to_list
+from Elaina.modules.database_ptb_funcs.sql.users_sql import get_user_com_chats
 
 GBAN_ENFORCE_GROUP = 6
 
