@@ -41,13 +41,13 @@ from telegram import ParseMode, Update, Bot, Chat, User, MessageEntity, InlineKe
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
-from tg_bot import dispatcher, OWNER_ID, SUDO_USERS, WHITELIST_USERS, MESSAGE_DUMP, LOGGER
-from tg_bot.modules.helper_funcs.handlers import CMD_STARTERS
-from tg_bot.modules.helper_funcs.misc import is_module_loaded, send_to_list
-from tg_bot.modules.helper_funcs.chat_status import is_user_admin
-from tg_bot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from tg_bot.modules.helper_funcs.string_handling import markdown_parser
-from tg_bot.modules.disable import DisableAbleCommandHandler
+from Elaina import dispatcher, OWNER_ID, SUDO_USERS, WHITELIST_USERS, MESSAGE_DUMP, LOGGER
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.handlers import CMD_STARTERS
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.misc import is_module_loaded, send_to_list
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.chat_status import is_user_admin
+from Ealina.modules.database_ptb_funcs.python_telegram_bot.extraction import extract_user, extract_user_and_text
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.string_handling import markdown_parser
+from Elaina.modules.disable import DisableAbleCommandHandler
 
 import tg_bot.modules.sql.feds_sql as sql
 
