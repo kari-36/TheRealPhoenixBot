@@ -39,9 +39,9 @@ from telegram import Update, Bot
 from telegram.ext import CommandHandler, run_async
 from telegram.utils.helpers import escape_markdown
 
-from tg_bot import dispatcher
+from Elaina import dispatcher
 
-from tg_bot.modules.disable import DisableAbleCommandHandler
+from Elaina.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
