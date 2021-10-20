@@ -27,7 +27,7 @@ SOFTWARE.
 from functools import wraps
 from typing import Optional
 
-from tg_bot.modules.helper_funcs.misc import is_module_loaded
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
