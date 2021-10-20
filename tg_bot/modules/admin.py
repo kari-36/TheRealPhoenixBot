@@ -36,11 +36,11 @@ from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from tg_bot import dispatcher, SUDO_USERS, TOKEN
-from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin
-from tg_bot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from tg_bot.modules.log_channel import loggable
+from Elaina import dispatcher, SUDO_USERS, TOKEN
+from Elaina.modules.disable import DisableAbleCommandHandler
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.chat_status import bot_admin, can_promote, user_admin, can_pin
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.extraction import extract_user, extract_user_and_text
+from Elaina.modules.log_channel import loggable
 
 
 @run_async
