@@ -32,8 +32,8 @@ import requests as r
 from telegram import Message, Chat, Update, Bot
 from telegram.ext import run_async
 
-from tg_bot import dispatcher, WALL_API
-from tg_bot.modules.disable import DisableAbleCommandHandler
+from Elaina import dispatcher, WALL_API
+from Elaina.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
