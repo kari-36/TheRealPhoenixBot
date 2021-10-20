@@ -31,9 +31,9 @@ from feedparser import parse
 from telegram import ParseMode, constants
 from telegram.ext import CommandHandler
 
-from tg_bot import dispatcher, updater
-from tg_bot.modules.helper_funcs.chat_status import user_admin
-from tg_bot.modules.sql import rss_sql as sql
+from Elaina import dispatcher, updater
+from Elaina.modules.database_ptb_funcs.python_telegram_bot.chat_status import user_admin
+from Elaina.modules.database_ptb_funcs.sql import rss_sql as sql
 
 
 def show_url(bot, update, args):
